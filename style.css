@@ -1,11 +1,3 @@
-@media (max-width: 321px) {
-    .meme_img1 {
-        max-width: 10rem;
-        height: 10rem;
-
-    }
-}
-
 
 body {
     background-color: #ECE2D0;
@@ -89,3 +81,25 @@ h1 {
     transition: all 1s;
 }
 
+@media (max-width: 321px) {
+    .meme_img1 {
+        max-width: 10rem;
+        height: 10rem;
+
+    }
+
+    body {
+        background-color: #ECE2D0;
+        font-family: 'Inika', serif;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 821px) {
+
+    body {
+        background-color: #ECE2D0;
+        font-family: 'Inika', serif;
+        font-size: 1.2rem;
+    }
+}
