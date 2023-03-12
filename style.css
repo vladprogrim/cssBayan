@@ -1,3 +1,12 @@
+@media (max-width: 321px) {
+    .meme_img1 {
+        max-width: 10rem;
+        height: 10rem;
+
+    }
+}
+
+
 body {
     background-color: #ECE2D0;
     font-family: 'Inika', serif;
@@ -30,8 +39,10 @@ h1 {
 .meme_img1 {
     display: none;
     cursor: pointer;
-    width: 30rem;
-    margin: auto;
+    width: 5rem;
+    transition: all 1s;
+    transition: all 0.2s ease-out;
+    margin: 0 auto;
 }
 
 .item {
@@ -42,7 +53,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: azure;
+    color: blue;
     cursor: pointer;
     transition: all 0.2s ease-out;
 }
@@ -55,19 +66,26 @@ h1 {
 }
 
 .item-input {
-    appearance: none;
+    display: none;
 }
 
-.item-input:checked ~ .item-title {
-    color: red;
+.item-input:hover ~ .item-title {
+    color: black;
 }
 
-.item-input:checked ~ .meme_img1 {
+/* .item-input:checked ~ .item-title {
+    color: black;
+} */
+
+.item-input:hover ~ .meme_img1 {
     display: block;
+    width: 30rem;
+    transition: all 1s;
+    transition: all 0.2s ease-out;
 }
 
-.item-input:checked ~ .item-title:after {
+.item-input:hover ~ .item-title:after {
     transform: rotate(45deg);
+    transition: all 1s;
 }
-
 
